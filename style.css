@@ -1,0 +1,249 @@
+/*@import url('https://fonts.googleapis.com/css2? family= Ubuntu:wght@500 & display=swap');*/
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0%;
+    padding: 0;
+    font-size: 3rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 50%;
+    width: auto;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.logo i{
+    position: 0;
+    padding-left: 0;
+    font-size: 25px;
+	color: black;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.buscar{
+    position: center;
+    padding: 0;
+    top: 10%;
+    left: 300px;
+    
+}
+input{
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color: gray;
+}
+
+.buton1{
+    border: none;
+    border-radius: 20%;
+    background-color: red;
+    transition: all .3s ease;
+}
+.buton2{
+    border: none;
+    border-radius: 20%;
+    background-color: silver;
+    transition: all .3s ease;
+}
+
+.i{
+    padding: 0;
+    top: 5%;
+    left: 5%;
+}
+
+buton a {
+	font-size: 25px;
+	color: black;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.buscar:hover input{
+    width: 300px;
+}
+.buscar input:focus {
+    width: 300px;
+  }
+
+.lista{
+    display: flex;
+    list-style: none;
+    padding: 0, 15px;
+}
+
+.opciones{
+    display: flex;
+    list-style: none;
+}
+
+.lista .opciones{
+    padding: 0 30px;
+}
+
+.lista .opciones a{
+    transition: .3s ease;
+    color: black;
+}
+
+.buton1 .opciones a:hover{
+    color: white;
+}
+
+.logo{
+    color: red;
+}
+
+.logo a{
+    /*background-color: red;*/
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all .3 ease;
+    color: red;
+}
+
+.logo a:hover{
+    background-color: rgba(red, red, red, 0.8);
+    
+}
+
+h1{
+    text-align: center;
+    font-family: Brush Script MT;
+    color: purple;
+    text-size-adjust: auto;
+}
+p{
+    text-align: center;
+    font-family: Brush Script MT;
+    color: purple;
+    text-size-adjust: auto;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 5px;
+    padding: 20px;
+    grid-auto-flow: dense;
+
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 1em;
+
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.items:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    border-radius: 10px;
+}
+img{
+    max-width: 100%;
+    display: block;
+    outline: 20px solid transparent;
+    outline-offset: 10px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.galeria img{
+    /*color: white;*/
+    display: grid;
+    padding: 5px;
+    font-size: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    background: transparent;
+    
+    place-items: center;
+    transition: 0.5s;
+
+    grid-auto-flow: dense;
+
+}
+.galeria .items:nth-child(1){
+    grid-column-start: span 2;
+}
+
+.galeria .items:nth-child(){
+    -ms-grid-row-align: center;
+}
+
+.galeria .items:nth-child(10){
+    grid-column-start: span 2;
+    
+}
+
+.galeria .items:nth-child(12){
+    grid-column-start: span 2;
+    
+}
+
+.galeria .items:nth-child(2){
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.galeria .items:nth-child(31){
+    grid-column-start: span 3; 
+   
+}
+
+@media (min-width: 600px) {
+.wide {
+    grid-column: span 2;
+    } 
+
+}
+.tall {
+    grid-row: span 2;
+    }
+    
+  
